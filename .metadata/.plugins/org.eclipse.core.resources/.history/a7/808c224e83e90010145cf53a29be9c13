@@ -1,0 +1,22 @@
+package twoPointer;
+
+import java.util.Arrays;
+
+public class TripletsWithSmallerSum {
+
+	public static void main(String[] args) {
+
+		int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		int target = 13;
+
+		getTripletsWithSmallerSum(nums, target);
+
+	}
+
+	private static int getTripletsWithSmallerSum(int[] nums, int target) {
+		Arrays.sort(nums);
+		return target;
+
+	}
+
+}

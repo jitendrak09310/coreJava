@@ -1,0 +1,17 @@
+package oops;
+
+public class RuntimePolymorphismWithMethods {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Base {
+
+}
+
+class Derived extends Base {
+
+}

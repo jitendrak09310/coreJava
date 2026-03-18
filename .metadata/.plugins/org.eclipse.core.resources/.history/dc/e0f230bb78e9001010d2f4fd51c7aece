@@ -1,0 +1,23 @@
+package twoPointer;
+
+public class ThreeSumClosest {
+
+	public static void main(String[] args) {
+
+		int nums[] = { -1, 2, 1, -4 };
+		int target = 1;
+
+		threeSumClosest(nums, target);
+
+	}
+
+	private static int threeSumClosest(int[] nums, int target) {
+
+		int max_diff = Integer.MAX_VALUE;
+		int n = nums.length;
+
+		return 0;
+
+	}
+
+}

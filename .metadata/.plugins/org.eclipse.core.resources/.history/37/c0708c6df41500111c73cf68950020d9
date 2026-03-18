@@ -1,0 +1,55 @@
+package multiThreading;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecThreads {
+
+	static int number = 1;
+	static int limit = 10;
+
+	public static void main(String[] args) {
+		ExecThreads execThreads = new ExecThreads();
+		ExecutorService executor = Executors.newFixedThreadPool(2);
+		executor.submit(() -> execThreads.printOdd());
+		executor.submit(() -> execThreads.printEven());
+		executor.shutdown();
+
+	}
+
+	public synchronized void printOdd() {
+
+		while (number <= 10) {
+			while (number % 2 == 0) {
+				try {
+					wait();
+				} catch (Exception e) {
+					Thread.currentThread().interrupt();
+				}
+			}
+
+			System.out.println("odd number : " + Thread.currentThread().getName() + ": " + number);
+			number++;
+			notify();
+		}
+
+	}
+
+	public synchronized  void printEven() {
+
+		while (number <= 10) {
+			while (number % 2 != 0) {
+				try {
+					wait();
+				} catch (Exception e) {
+					Thread.currentThread().interrupt();
+				}
+			}
+			System.out.println("Even number : " + Thread.currentThread().getName() + ": " + number);
+			number++;
+			notify();
+		}
+
+	}
+
+}

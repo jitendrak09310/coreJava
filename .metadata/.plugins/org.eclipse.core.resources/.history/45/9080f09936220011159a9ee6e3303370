@@ -1,0 +1,11 @@
+package collectionsFramework;
+
+import java.util.stream.Stream;
+
+public class Test7 {
+	public static void main(String[] args) {
+		
+		Stream.of("a","b","b","d","d","a")
+
+	}
+}

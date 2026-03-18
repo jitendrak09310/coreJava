@@ -1,0 +1,12 @@
+package recursion;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+	}
+
+	static int fib(int n) {
+		return fib(n - 1) + fib(n - 2);
+	};
+}

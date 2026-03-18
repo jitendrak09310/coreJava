@@ -1,0 +1,14 @@
+package jvmInternalsAndMemory;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String s = "hello";
+		String b = "hel" + "lo";
+		String c = "hel";
+		String d = c + "lo";
+
+	}
+
+}

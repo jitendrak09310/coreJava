@@ -1,0 +1,13 @@
+package interfaceAbstraction;
+
+public class MoreSpecific {
+
+}
+
+interface D {
+
+}
+
+interface E {
+
+}

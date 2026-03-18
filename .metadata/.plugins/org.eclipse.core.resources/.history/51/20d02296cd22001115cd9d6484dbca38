@@ -1,0 +1,9 @@
+package comparableComparator;
+
+public class java16RecordsSealedClasses {
+
+	public static void main(String[] args) {
+
+	}
+
+}

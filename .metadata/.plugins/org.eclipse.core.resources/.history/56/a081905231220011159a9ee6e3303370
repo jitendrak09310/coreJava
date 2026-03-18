@@ -1,0 +1,14 @@
+package exceptionHandling;
+
+public class CustomException extends RuntimeException {
+	int code;
+
+	public CustomException(String msg, int code) {
+		super(msg);
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

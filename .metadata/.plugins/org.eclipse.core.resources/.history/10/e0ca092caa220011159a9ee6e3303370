@@ -1,0 +1,13 @@
+package enums;
+
+public class Test {
+
+}
+
+enum Day {
+	MON, TUE, THURS, WED, FRI, SAT, SUN;
+
+	boolean isWeekend() {
+		return this == SAT || this == SUN;
+	}
+}

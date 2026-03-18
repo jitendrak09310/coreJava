@@ -1,0 +1,45 @@
+package multiThreading;
+
+public class ProducerConsumer {
+
+	boolean status = false;
+
+	public static void main(String[] args) {
+
+		new Thread(() -> {
+
+		});
+
+	}
+
+	public synchronized void producer(int n) {
+		while (status) {
+			try {
+				wait();
+			} catch (Exception e) {
+				Thread.currentThread().interrupt();
+			}
+
+		}
+		System.out.println("Produced : " + n);
+		status = true;
+		notify();
+
+	}
+
+	public synchronized void consumer(int n) {
+		while (!status) {
+			try {
+				wait();
+			} catch (Exception e) {
+				Thread.currentThread().interrupt();
+			}
+
+		}
+		System.out.println("consumed : " + n);
+		status = false;
+		notify();
+
+	}
+
+}

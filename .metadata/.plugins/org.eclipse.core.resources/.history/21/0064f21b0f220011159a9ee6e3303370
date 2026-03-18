@@ -1,0 +1,30 @@
+package oops;
+
+public class VariableWithMethodAndConstructorCalling {
+
+	public static void main(String[] args) {
+
+		A obj = new B();// before object creation parent constructor are called then child constructor.
+		System.out.println(obj.x);
+	}
+}
+
+class A {
+	int x = 10;
+
+	A() {
+		show();// it will call b.show -- runtime poly morphism..
+	}
+
+	void show() {
+		System.out.println("A.show() : " + x);
+	}
+}
+
+class B extends A {
+	int x = 20;
+
+	void show() {
+		System.out.println("B.show : " + x);
+	}
+}

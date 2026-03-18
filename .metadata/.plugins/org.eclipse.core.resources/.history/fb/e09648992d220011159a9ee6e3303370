@@ -1,0 +1,15 @@
+package interfaceAbstraction;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		functional square = (x) -> x * x;
+
+	}
+
+}
+
+interface functional {
+	int apply(int x);
+}

@@ -1,0 +1,24 @@
+package trickyQuestions;
+
+public class Test2 {
+	static int x = 0;
+
+	static int getX() {
+		System.out.println("getX ");
+		return x;
+	}
+
+	static int getInc() {
+		System.out.println("getInc");
+		return ++x;
+	}
+
+	public static void main(String[] args) {
+
+		int result = getX() + getInc() + getX();
+
+		System.out.println(result);
+
+	}
+
+}

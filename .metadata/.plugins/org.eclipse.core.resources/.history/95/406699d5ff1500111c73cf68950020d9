@@ -1,0 +1,20 @@
+package multiThreading;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class CallableThread {
+
+	public static void main(String[] args) {
+
+		Callable<Integer> task = () -> {
+			Thread.sleep(1000);
+			return 30;
+		};
+
+		ExecutorService thread = Executors.newSingleThreadExecutor();
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package innerStaticNestedAndAnonymous;
+
+public class Outer1 {
+
+	static int count = 0;
+
+	static class StaticNested {
+		void show() {
+			System.out.println("Count : " + ++count);
+		}
+	}
+
+	public static void main(String[] args) {
+		new StaticNested().show();
+		new StaticNested().show();
+
+	}
+
+}

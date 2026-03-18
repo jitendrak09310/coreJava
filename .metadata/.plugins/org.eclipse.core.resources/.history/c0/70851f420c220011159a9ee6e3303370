@@ -1,0 +1,26 @@
+package oops;
+
+public class ConstructorWithSuper {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Child extends Parent {
+
+	Child() {
+		super("Hello");
+	}
+}
+
+class Parent {
+	Parent() {
+		System.out.println("Parent");
+	}
+
+	Parent(String s) {
+		System.out.println("Parent : " + s);
+	}
+}

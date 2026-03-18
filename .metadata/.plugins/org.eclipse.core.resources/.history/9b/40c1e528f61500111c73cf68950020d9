@@ -1,0 +1,19 @@
+package multiThreading;
+
+public class ProducerConsumer {
+
+	int n = 10;
+	boolean status = false;
+
+	public static void main(String[] args) {
+
+	}
+
+	public synchronized void producer(int n) {
+		while (status) {
+
+		}
+
+	}
+
+}

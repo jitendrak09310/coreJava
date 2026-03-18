@@ -1,0 +1,8 @@
+package innerStaticNestedAndAnonymous;
+
+public class Test {
+
+	interface Printer {
+		void print();
+	}
+}

@@ -1,0 +1,20 @@
+package interfaceAbstraction;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		functional square = x -> x * x;
+		functional doubler = x -> 2 * x;
+		functional composed = x -> doubler.apply(square.apply(x));
+
+		System.out.println(square);
+		System.out.println(doubler);
+
+	}
+
+}
+
+interface functional {
+	int apply(int x);
+}

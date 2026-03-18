@@ -1,0 +1,15 @@
+package comparableComparator;
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ArrayList<Student> list = new ArrayList<>();
+		list.add(new Student("Bob", 25));
+		list.add(new Student("Alice", 22));
+		list.add(new Student("Charlie", 30));
+
+	}
+
+}

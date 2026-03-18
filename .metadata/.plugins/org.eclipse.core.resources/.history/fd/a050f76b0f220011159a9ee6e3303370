@@ -1,0 +1,22 @@
+package oops;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Vehicle {
+
+}
+
+class Car {
+
+	int speed = 100;
+
+	void display() {
+		System.out.println("Car speed : " + speed);
+	}
+}

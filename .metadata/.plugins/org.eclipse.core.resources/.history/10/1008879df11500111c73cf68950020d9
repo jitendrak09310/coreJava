@@ -1,0 +1,28 @@
+package multiThreading;
+
+public class EvenOddThread {
+
+	public static void main(String[] args) {
+
+		Thread thread = new Thread(() -> {
+			for (int i = 0; i < 10; i++) {
+				if (i % 2 == 0) {
+					System.out.println("Printing Even Number : " + i);
+				}
+			}
+		});
+
+		Thread thread2 = new Thread(() -> {
+			for (int i = 0; i < 10; i++) {
+				if (i % 2 != 0) {
+					System.out.println("Printing Odd Number : " + i);
+				}
+			}
+		});
+
+		thread.start();
+		thread2.start();
+
+	}
+
+}

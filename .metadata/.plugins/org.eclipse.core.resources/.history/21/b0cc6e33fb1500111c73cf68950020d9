@@ -1,0 +1,14 @@
+package multiThreading;
+
+public class ProducerConsumer {
+
+	public static void main(String[] args) {
+
+		static int data;
+		static boolean status = false;
+		
+		ProducerConsumer pc = new ProducerConsumer();
+		
+	}
+
+}

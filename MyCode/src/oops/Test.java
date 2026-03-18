@@ -1,0 +1,33 @@
+package oops;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Vehicle v = new Car();
+		v.display();
+
+		System.out.println(v.speed);
+
+	}
+
+}
+
+class Vehicle {
+	int speed = 60;
+
+	void display() {
+		System.out.println("Vehicle Speed : " + speed);
+	}
+
+}
+
+class Car extends Vehicle {
+
+	int speed = 100;
+
+	void display() {
+		System.out.println("Car speed : " + speed);
+		super.display();
+	}
+
+}

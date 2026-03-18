@@ -1,0 +1,17 @@
+package collectionsFramework;
+
+import java.util.*;
+
+public class Test6 {
+	public static void main(String[] args) {
+		HashMap<String, List<Integer>> map = new HashMap<>();
+
+		map.computeIfAbsent("nums", k -> new ArrayList<>()).add(1);
+		map.computeIfAbsent("nums", k -> new ArrayList<>()).add(2);
+		map.merge("nums", Arrays.asList(3), (v1, v2) -> {
+			v1.addAll(v2);
+			return v1;
+		});
+		System.out.println(map.get("nums"));
+	}
+}

@@ -1,0 +1,17 @@
+package designPatterns;
+
+public class Test1 {
+
+}
+
+class Calculator {
+	private Strategy strategy;
+
+	Calculator(Strategy s) {
+		this.strategy = s;
+	}
+}
+
+interface Strategy {
+	int execute(int a, int b);
+}

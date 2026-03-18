@@ -1,0 +1,17 @@
+package multithreadingAndConcurrency;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		Thread t = new Thread(() -> {
+			try {
+				Thread.sleep(100);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		});
+
+	}
+
+}

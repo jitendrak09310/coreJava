@@ -1,0 +1,17 @@
+package exceptionHandling;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		try {
+			try {
+				throw new Exception("inner");
+			} finally {
+				System.out.println("inner Finally..");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package jvmInternalsAndMemory;
+
+public class Test1 {
+	static void change(int x) {
+		x = 99;
+	}
+
+	static void change(int arr[]) {
+		arr[0] = 99;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

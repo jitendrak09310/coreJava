@@ -1,0 +1,13 @@
+package multithreadingAndConcurrency;
+
+public class Test6 {
+
+	public static final Object lock = new Object();
+	public static int number = 1;
+	public static final int max = 10;
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,76 @@
+package twoPointer;
+
+import java.util.HashMap;
+
+public class TwoSum {
+
+	public static void main(String[] args) {
+		int arr[] = { 1, 2, 3, 45, 50, 68, 90 };
+
+		int sum = 140;
+
+		int[] numbers = getNumbersByBruteForce(arr, sum);
+//		for (int i : numbers) {
+//			System.out.println(i);
+//		}
+
+		int[] numbersByHashmap = getNumbersByHashmap(arr, sum);
+//		for (int i : numbersByHashmap) {
+//			System.out.println(i);
+//		}
+
+		int[] numbersByTwoPointers = getNumbersByTwoPointers(arr, sum);
+		for (int i : numbersByTwoPointers) {
+			System.out.println(i);
+		}
+	}
+
+	public static int[] getNumbersByTwoPointers(int[] arr, int sum) {
+
+		int a = 0;
+		int z = arr.length-1;
+
+		while (a < z) {
+			if (arr[a] + arr[z] == sum) {
+				return new int[] { arr[a], arr[z] };
+			} else if (arr[a] + arr[z] < sum) {
+				a++;
+			} else if (arr[a] + arr[z] > sum) {
+				z--;
+			}
+		}
+		return new int[] { -1 };
+	}
+
+	public static int[] getNumbersByHashmap(int[] arr, int sum) {
+		int n = arr.length;
+		HashMap<Integer, Integer> hm = new HashMap<>();
+
+		for (int i = 0; i < n; i++) {
+			int num = sum - arr[i];
+
+			if (hm.containsKey(num)) {
+				return new int[] { num, arr[i] };
+			}
+			hm.put(arr[i], i);
+		}
+
+		return new int[] { -1 };
+
+	}
+
+	public static int[] getNumbersByBruteForce(int arr[], int sum) {
+		// brute force
+		int n = arr.length;
+		for (int i = 0; i < n; i++) {
+			for (int j = i + 1; j < n; j++) {
+				if (arr[i] + arr[j] == sum) {
+					return new int[] { arr[i], arr[j] };
+				}
+			}
+		}
+
+		return new int[] { -1 };
+	}
+
+}

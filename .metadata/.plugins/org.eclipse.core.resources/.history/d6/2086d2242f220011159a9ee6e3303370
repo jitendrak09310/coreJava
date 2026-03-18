@@ -1,0 +1,36 @@
+package interfaceAbstraction;
+
+public class Area {
+
+	public static void main(String[] args) {
+		Shape s = new Circle(5);
+		s.display();
+
+		System.out.println(s instanceof Shape);
+		System.out.println(s instanceof Circle);
+	}
+
+}
+
+abstract class Shape {
+	abstract double area();
+
+	void display() {
+		System.out.printf("Area: %.2f%n", area());
+	}
+}
+
+class Circle extends Shape {
+	double r;
+
+	Circle(double r) {
+		this.r = r;
+	}
+
+	@Override
+	double area() {
+		return Math.PI * r * r; // PI is 3.14 
+
+	}
+
+}

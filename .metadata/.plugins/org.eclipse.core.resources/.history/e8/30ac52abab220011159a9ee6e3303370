@@ -1,0 +1,32 @@
+package designPatterns;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Singleton {
+	private static Singleton instance;
+	private int count = 0;
+
+	private Singleton() {
+	}
+
+	static Singleton getInstance() {
+		if (instance == null) {
+			instance = new Singleton();
+		}
+		return instance;
+	}
+
+	void inc() {
+		count++;
+	}
+
+	int get() {
+		return count;
+	}
+}

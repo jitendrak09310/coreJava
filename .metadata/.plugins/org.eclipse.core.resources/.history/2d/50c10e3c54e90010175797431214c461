@@ -1,0 +1,21 @@
+package twoPointer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TwoSumWithDuplicates {
+	public static void main(String[] args) {
+
+		int arr[] = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 };
+		int sum = 4;
+		getTwoSumWithDuplicates(arr, sum);
+
+	}
+
+	public static List<List<Integer>> getTwoSumWithDuplicates(int arr[], int sum) {
+
+		ArrayList<List<List<Integer>>> pairs = new ArrayList<>();
+		return pairs;
+	}
+
+}

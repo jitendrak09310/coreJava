@@ -1,0 +1,27 @@
+package multiThreading;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecThreads {
+
+	static int number = 1;
+	static int limit = 10;
+
+	public static void main(String[] args) {
+
+		ExecutorService executor = Executors.newFixedThreadPool(2);
+		executor.submit(() -> printOdd());
+		executor.submit(() -> printEven());
+
+	}
+
+	public static void printOdd() {
+
+	}
+
+	public static void printEven() {
+
+	}
+
+}

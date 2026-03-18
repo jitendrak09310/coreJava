@@ -1,0 +1,28 @@
+package multithreadingAndConcurrency;
+
+public class Test3 {
+	static int count = 0;
+
+	public static synchronized void increment() {
+		count++;
+	}
+
+	public static void main(String[] args) {
+
+		Thread t1 = new Thread(() -> {
+			for (int i = 0; i < 1000; i++) {
+				increment();
+			}
+		});
+
+		Thread t2 = new Thread(() -> {
+			for (int i = 0; i < 1000; i++) {
+				increment();
+			}
+		});
+
+		t1.start();
+
+	}
+
+}

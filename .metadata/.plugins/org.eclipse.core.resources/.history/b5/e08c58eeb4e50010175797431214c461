@@ -1,0 +1,30 @@
+package twoPointer;
+
+public class TwoSum {
+
+	public static void main(String[] args) {
+		int arr[] = { 1, 21, 2, 45, 0, 18, 9 };
+
+		int sum = 47;
+
+		int[] numbers = getNumbersByBruteForce(arr, sum);
+		for (int i : numbers) {
+			System.out.println(i);
+		}
+	}
+
+	public static int[] getNumbersByBruteForce(int arr[], int sum) {
+		// brute force
+		int n = arr.length;
+		for (int i = 0; i < n ; i++) {
+			for (int j = i + 1; j < n; j++) {
+				if (arr[i] + arr[j] == sum) {
+					return new int[] { arr[i], arr[j] };
+				}
+			}
+		}
+
+		return new int[] { -1 };
+	}
+
+}

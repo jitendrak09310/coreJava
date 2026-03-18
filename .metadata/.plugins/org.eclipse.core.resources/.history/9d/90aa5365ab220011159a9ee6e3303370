@@ -1,0 +1,11 @@
+package designPatterns;
+
+public class Test {
+
+}
+
+class Singleton {
+	private static Singleton instance;
+	private int count = 0;
+
+}

@@ -1,0 +1,9 @@
+package generics;
+
+public class Box<T> {
+
+	public static void main(String[] args) {
+
+	}
+
+}

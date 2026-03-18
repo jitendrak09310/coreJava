@@ -1,0 +1,16 @@
+package exceptionHandling;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		try {
+			int[] arr = new int[3];
+			arr[5] = 10;
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

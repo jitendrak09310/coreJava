@@ -1,0 +1,9 @@
+package collectionsFramework;
+
+import java.util.TreeSet;
+
+public class Test2 {
+	public static void main(String[] args) {
+		TreeSet<Object> treeSet = new TreeSet<>();
+	}
+}

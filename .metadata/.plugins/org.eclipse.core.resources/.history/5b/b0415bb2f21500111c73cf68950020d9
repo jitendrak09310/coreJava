@@ -1,0 +1,15 @@
+package multiThreading;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecThreads {
+	
+	public static void main(String[] args) {
+		
+		ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(2);
+		
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package twoPointer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TwoSumWithDuplicates {
+	public static void main(String[] args) {
+
+		int arr[] = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 };
+		int sum = 4;
+		List<List<Integer>> twoSumWithDuplicates = getTwoSumWithDuplicates(arr, sum);
+		System.out.println(twoSumWithDuplicates);
+
+	}
+
+	public static List<List<Integer>> getTwoSumWithDuplicates(int arr[], int sum) {
+
+		List<List<Integer>> pairs = new ArrayList<>();
+
+		int left = 0;
+		int right = arr.length - 1;
+
+		while (left < right) {
+			if (arr[left] + arr[right] == sum) {
+				pairs.add(List.of(arr[left], arr[right]));
+				left++;
+				right--;
+			} else if (arr[left] + arr[right] < sum) {
+				left++;
+			} else if (arr[left] + arr[right] > sum) {
+				right--;
+			}
+		}
+
+		return pairs;
+	}
+
+}

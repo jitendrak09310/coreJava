@@ -1,0 +1,29 @@
+package designPatterns;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		EventBus bus = new EventBus();
+		bus.subscribe(e -> System.out.println("A : " + e));
+		bus.subscribe(e -> System.out.println("B : " + e));
+		bus.publish("click");
+	}
+
+}
+
+interface Observer {
+	void update(String event);
+}
+
+class EventBus {
+	private java.util.List<Observer> obs = new java.util.ArrayList<>();
+
+	void subscribe(Observer o) {
+		obs.add(o);
+	}
+
+	void publish(String e) {
+		obs.forEach(o -> o.update(e));
+	}
+}

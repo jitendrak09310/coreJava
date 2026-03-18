@@ -1,0 +1,30 @@
+package designPatterns;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Builder {
+
+	private String name = "";
+	private int age = 0;
+
+	Builder name(String n) {
+		this.name = n;
+		return this;
+	}
+
+	Builder age(int a) {
+		this.age = a;
+		return this;
+	}
+
+	String build() {
+		return name + ":" + age;
+	}
+
+}

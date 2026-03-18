@@ -1,0 +1,10 @@
+package twoPointer;
+
+import java.util.ArrayList;
+
+public class SquaresofaSortedArray {
+
+	public static void main(String[] args) {
+		int nums[] = { -4, -1, 0, 3, 10 };
+		int neg[]= new int[4];
+}

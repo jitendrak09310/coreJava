@@ -1,0 +1,13 @@
+package exceptionHandling;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		try(AutoCloseable a -> System.out.println("closed")) {
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

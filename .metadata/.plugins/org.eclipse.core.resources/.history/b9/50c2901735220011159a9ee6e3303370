@@ -1,0 +1,12 @@
+package collectionsFramework;
+
+import java.util.PriorityQueue;
+import java.util.concurrent.PriorityBlockingQueue;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+	}
+
+}

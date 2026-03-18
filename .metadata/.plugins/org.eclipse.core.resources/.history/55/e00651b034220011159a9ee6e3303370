@@ -1,0 +1,12 @@
+package collectionsFramework;
+
+import java.util.*;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		Deque<Integer> deque = new ArrayDeque<>();
+		deque.push(1);
+	}
+
+}

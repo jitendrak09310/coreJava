@@ -1,0 +1,21 @@
+package exceptionHandling;
+
+public class CustomException extends RuntimeException {
+	int code;
+
+	public CustomException(String msg, int code) {
+		super(msg);
+		this.code = code;
+	}
+	
+	public static void main(String[] args) {
+
+	}
+}
+
+class Test5{
+	if(age<0) {
+		throw new CustomException("Invalid Age", 400);
+	}
+}
+}

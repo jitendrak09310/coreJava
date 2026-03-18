@@ -1,0 +1,31 @@
+package oops;
+
+public class RuntimePolymorphismWithMethods {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Base {
+
+	static String greet() {
+		return "Hello from base";
+	}
+
+	String name() {
+		return "Base";
+	}
+
+}
+
+class Derived extends Base {
+	static String greet() {
+		return "Hello from Derived";
+	}
+
+	String name() {
+		return "Derived";
+	}
+}

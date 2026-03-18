@@ -1,0 +1,17 @@
+package designPatterns;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+interface Observer {
+	void update(String event);
+}
+
+class EventBus{
+	private java.util.List<Observer> obs = new java.util.ArrayList<>();
+}

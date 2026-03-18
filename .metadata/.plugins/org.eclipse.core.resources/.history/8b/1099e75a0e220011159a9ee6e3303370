@@ -1,0 +1,32 @@
+package oops;
+
+public class VariableWithMethodCalling {
+
+	public static void main(String[] args) {
+
+		A obj = new B();
+		System.out.println(obj.x);
+
+	}
+
+	class A {
+		int x = 10;
+
+		A() {
+			show();
+		}
+
+		void show() {
+			System.out.println("A.show() : " + x);
+		}
+	}
+
+	class B extends A {
+		int x = 20;
+
+		void show() {
+			System.out.println("B.show : " + x);
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package staticFinalAndInitializers;
+
+public class Test {
+
+	static int x = 5;
+	static {
+		x = 10;
+		System.out.println("Static Block : " + x);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Main : "+ x);
+	}
+
+}

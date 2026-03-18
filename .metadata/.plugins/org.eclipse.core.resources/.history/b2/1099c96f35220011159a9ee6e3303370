@@ -1,0 +1,9 @@
+package collectionsFramework;
+
+import java.util.*;
+
+public class Test6 {
+	public static void main(String[] args) {
+		HashMap<String, List<Integer>> map = new HashMap<>();
+	}
+}

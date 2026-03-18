@@ -1,0 +1,73 @@
+package multiThreading;
+
+public class ProducerConsumer {
+	static int data;
+	static boolean status = false;
+	static int limit = 10;
+
+	public static void main(String[] args) {
+
+		ProducerConsumer pc = new ProducerConsumer();
+
+		Thread producer = new Thread(() -> {
+			int value = 1;
+			while (data <= limit) {
+
+				pc.producer(value++);
+				try {
+					Thread.sleep(500);
+				} catch (Exception e) {
+					Thread.currentThread().interrupt();
+				}
+			}
+		});
+
+		Thread consumer = new Thread(() -> {
+			while (data <= limit) {
+				pc.consumer();
+				try {
+					Thread.sleep(800);
+				} catch (Exception e) {
+					Thread.currentThread().interrupt();
+				}
+			}
+
+		});
+
+		producer.start();
+		consumer.start();
+
+	}
+
+	public synchronized void producer(int value) {
+
+		while (status) {
+			try {
+				wait();
+			} catch (Exception e) {
+				Thread.currentThread().interrupt();
+			}
+		}
+		data = value;
+		System.out.println("Produced : " + data);
+		status = true;
+		notify();
+	}
+
+	public synchronized void consumer() {
+
+		while (!status) {
+			try {
+				wait();
+			} catch (Exception e) {
+				Thread.currentThread().interrupt();
+			}
+		}
+
+		System.out.println("Consumed : " + data);
+		status = false;
+		notify();
+
+	}
+
+}

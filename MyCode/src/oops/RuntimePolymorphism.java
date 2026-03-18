@@ -1,0 +1,39 @@
+package oops;
+
+public class RuntimePolymorphism {
+
+	public static void main(String[] args) {
+		Animal a = new Dog();
+		a.sound(); // This is runtime polymorphism. methods are resolved at runtime.
+		System.out.println(a.name);// fields are resolved at compile time.
+
+		// Trying to do the reverse...
+
+		System.out.println("*************Reverse.............");
+//Casting doesn’t change the object, it only changes the reference type.
+		// object and
+		Dog d = (Dog) new Animal(); // “Upcasting is always safe, but downcasting is only safe if the actual object
+									// is of the target type. Here, new Animal() is not a Dog, so casting fails at
+									// runtime.”
+		d.sound();
+		System.out.println(d.name);
+	}
+
+}
+
+class Animal {
+	String name = "Animal";
+
+	void sound() {
+		System.out.println("Generic Sound");
+	}
+}
+
+class Dog extends Animal {
+
+	String name = "Dog";
+
+	void sound() {
+		System.out.println("Dog is barking.. ");
+	}
+}

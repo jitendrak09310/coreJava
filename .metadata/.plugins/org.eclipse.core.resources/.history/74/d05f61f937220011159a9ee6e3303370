@@ -1,0 +1,13 @@
+package generics;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Box<Integer> b1 = new Box<>(42);
+		Box<String> box = new Box<>("Hi");
+		System.out.println(b1);
+		System.out.println(box);
+
+	}
+
+}

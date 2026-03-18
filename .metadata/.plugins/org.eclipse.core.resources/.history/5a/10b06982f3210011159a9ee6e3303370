@@ -1,0 +1,10 @@
+package arraysOperations;
+
+public class ArraysOperations {
+
+	public static void main(String[] args) {
+
+		int[] ar = new int[5];
+
+	}
+}

@@ -1,0 +1,21 @@
+package oops;
+
+public class RuntimePolymorphism {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Animal {
+	String name = "Animal";
+
+	void sound() {
+		System.out.println("Generic Sound");
+	}
+}
+
+class Dog extends Animal {
+
+}

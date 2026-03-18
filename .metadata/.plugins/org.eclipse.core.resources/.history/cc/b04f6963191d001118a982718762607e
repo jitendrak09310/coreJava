@@ -1,0 +1,13 @@
+package oops;
+
+public class AttributesValueAssignment {
+
+	public static void main(String[] args) {
+		int x = 10;
+
+		AttributesValueAssignment av = new AttributesValueAssignment();
+		av.x=100;
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package trickyQuestions;
+
+import java.util.Arrays;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		int a[] = { 1, 2, 3 };
+		int[] b = { 1, 2, 3 };
+
+		System.out.println(a == b);
+		System.out.println(Arrays.equals(a, b));
+
+		System.out.println(a.equals(b));//array inherit object.equals which uses == .. it will be false.
+	}
+
+}

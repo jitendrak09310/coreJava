@@ -1,0 +1,12 @@
+package collectionsFramework;
+
+import java.util.*;
+
+public class Test6 {
+	public static void main(String[] args) {
+		HashMap<String, List<Integer>> map = new HashMap<>();
+
+		map.computeIfAbsent("nums", k -> new ArrayList<>().add(1));
+		map.computeIfAbsent("nums", k -> new ArrayList<>().add(2));
+	}
+}

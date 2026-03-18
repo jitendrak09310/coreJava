@@ -1,0 +1,13 @@
+package interfaceAbstraction;
+
+public class Area {
+
+}
+
+abstract class Shape {
+	abstract double area();
+
+	void display() {
+		System.out.printf("Area: %.2f%n", area());
+	}
+}

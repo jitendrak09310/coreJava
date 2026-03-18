@@ -1,0 +1,19 @@
+package staticFinalAndInitializers;
+
+public class Child extends Parent {
+	static {
+		System.out.println("Child Static..");
+	}
+	{
+		System.out.println("Child IIB ..");
+	}
+
+	Child() {
+		System.out.println("Child Constructor .. ");
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

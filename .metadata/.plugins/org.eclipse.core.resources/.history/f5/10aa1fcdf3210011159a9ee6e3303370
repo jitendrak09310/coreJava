@@ -1,0 +1,15 @@
+package arraysOperations;
+
+public class ArraysOperations {
+
+	public static void main(String[] args) {
+
+		int[] arr = new int[5];
+
+		System.out.println(arr[0]);
+		System.out.println(arr.length);
+		
+		int [][]matrix = new int {{1,2},{3,4},{5,6}};
+
+	}
+}

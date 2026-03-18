@@ -1,0 +1,23 @@
+package multithreadingAndConcurrency;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Test6 {
+
+	public static final Object lock = new Object();
+	public static int number = 1;
+	public static final int max = 10;
+
+	public static void main(String[] args) {
+
+		ExecutorService es = Executors.newFixedThreadPool(2);
+		
+		es.submit(()->{
+			
+			
+		});
+
+	}
+
+}

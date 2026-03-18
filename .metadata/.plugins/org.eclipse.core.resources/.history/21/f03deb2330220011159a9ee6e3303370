@@ -1,0 +1,15 @@
+package exceptionHandling;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		try {
+			
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package staticFinalAndInitializers;
+
+public class Test1 {
+
+	static int a = initA();
+	static int b = 20;
+
+	static int initA() {
+		System.out.println("b :" + b);// b will be zero as it will not be initialised before static.
+		return 10;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("a=" + a + " b=" + b);
+	}
+}

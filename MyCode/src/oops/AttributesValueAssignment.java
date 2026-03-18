@@ -1,0 +1,16 @@
+package oops;
+
+public class AttributesValueAssignment {
+	int x = 10;
+
+	public static void main(String[] args) {
+
+		AttributesValueAssignment av = new AttributesValueAssignment();
+		av.x = 100;
+		System.out.println(av.x);
+		AttributesValueAssignment av1 = new AttributesValueAssignment();
+		System.out.println(av1.x);
+
+	}
+
+}

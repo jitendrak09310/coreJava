@@ -1,0 +1,9 @@
+package multiThreading;
+
+public class ExecThreads {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

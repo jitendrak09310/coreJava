@@ -1,0 +1,14 @@
+package twoPointer;
+
+public class SortColors {
+
+	public static void main(String[] args) {
+		int nums[] = { 2, 0, 2, 1, 1, 0 };
+
+		int n = nums.length;
+		int l = 0;
+		int m = 0;
+		int h = n - 1;
+	}
+
+}

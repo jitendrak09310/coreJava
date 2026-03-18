@@ -1,0 +1,14 @@
+package recursion;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+	}
+
+	static String reverse(String s) {
+		if (s.isEmpty()) {
+			return s;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package multiThreading;
+
+public class EvenOddThread {
+
+	public static void main(String[] args) {
+
+	}
+
+}

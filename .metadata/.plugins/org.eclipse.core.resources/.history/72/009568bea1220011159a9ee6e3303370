@@ -1,0 +1,16 @@
+package staticFinalAndInitializers;
+
+public class Test1 {
+
+	static int a = initA();
+	static int b = 20;
+
+	static int initA() {
+		System.out.println("b :" + b);
+		return 10;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

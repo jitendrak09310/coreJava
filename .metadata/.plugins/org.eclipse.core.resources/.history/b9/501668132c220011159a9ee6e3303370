@@ -1,0 +1,15 @@
+package interfaceAbstraction;
+
+public class C {
+	public static void main(String[] args) {
+
+	}
+}
+
+interface A {
+	int x = 10;
+}
+
+interface B {
+	int x = 20;
+}
