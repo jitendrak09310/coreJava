@@ -33,9 +33,6 @@
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="generics.Box"/>
     <fullyQualifiedTypeName name="javax.swing.Box"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -52,6 +49,14 @@
     <fullyQualifiedTypeName name="designPatterns.Calculator"/>
     <fullyQualifiedTypeName name="designPatterns.Builder"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="designPatterns.EventBus"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="comparableComparator.Student"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="comparableComparator.java16RecordsSealedClasses.Point"/>
 </qualifiedTypeNameHistroy>

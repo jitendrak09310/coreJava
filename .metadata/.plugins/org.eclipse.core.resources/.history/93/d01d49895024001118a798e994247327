@@ -1,0 +1,14 @@
+package arrays;
+
+public class MaxSubarraySum {
+	
+	public static void main(String[] args) {
+		int arr[] = { 1, 13, 4, 5, 7 };
+		maxSubArraySumBruteForce(arr);
+	}
+
+	public static int maxSubArraySumBruteForce(int arr[]) {
+		int maxSum = Integer.MIN_VALUE
+		return maxsum;
+	}
+}

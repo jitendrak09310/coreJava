@@ -1,0 +1,19 @@
+package arrays;
+
+public class LargestInArray {
+	public static void main(String[] args) {
+		int arr[] = { 1, 13, 4, 5, 6, 7, 13, 25, 6 };
+		int largest = findLargest(arr);
+		System.out.println(largest);
+	}
+
+	public static int findLargest(int[] arr) {
+		int largest = Integer.MIN_VALUE;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > largest) {
+				largest = arr[i];
+			}
+		}
+		return largest;
+	}
+}

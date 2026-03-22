@@ -1,0 +1,23 @@
+package arrays;
+
+public class FindKey {
+
+	public static void main(String[] args) {
+		int arr[] = { 1, 13, 4, 5, 6, 7, 3, 25, 6 };
+		int key = 10;
+		int res = findKey(arr, key);
+		System.out.println("Index of key is: " + res);
+
+	}
+
+	public static int findKey(int arr[], int key) {
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == key) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+}

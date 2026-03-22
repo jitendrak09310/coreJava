@@ -1,0 +1,26 @@
+package arrays;
+
+public class TrappedWater {
+
+	public static void main(String[] args) {
+
+		int arr[] = { 4, 2, 0, 6, 3, 2, 5 };
+
+		calculateTrappedWater(arr);
+
+	}
+
+	public static int calculateTrappedWater(int[] arr) {
+		int n = arr.length;
+		int tw = 0;
+		// tw = (wl-currentLevel )*width;
+		// water level == will be min value of left max and right max for that current
+
+		// we will have to create two helper arrays leftmax and right to get the max
+		// value at certain positions
+
+		int[] lm = new int[n];
+		return tw;
+	}
+
+}

@@ -1,0 +1,29 @@
+package arrays;
+
+public class MaxProfit {
+
+	public static void main(String[] args) {
+		int prices[] = { 7, 1, 5, 3, 6, 4 };
+
+		int maxProfit = calMaxProfit(prices);
+		System.out.println(maxProfit);
+	}
+
+	public static int calMaxProfit(int arr[]) {
+
+		int maxProfit = 0;
+		int cbp = arr[0];
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (cbp < arr[i]) {
+					cbp = arr[i];
+				}
+				int cp = arr[i] - cbp;
+				maxProfit = Math.max(maxProfit, cp);
+			}
+
+		}
+
+		return maxProfit;
+	}
+}

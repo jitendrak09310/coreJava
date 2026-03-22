@@ -1,0 +1,17 @@
+package arrays;
+
+public class MaxProfit {
+
+	public static void main(String[] args) {
+		int prices[] = { 7, 1, 5, 3, 6, 4 };
+
+		calMaxProfit(prices);
+	}
+
+	public static int calMaxProfit(int arr[]) {
+
+		int maxprofit = 0;
+
+		return maxProfit;
+	}
+}
