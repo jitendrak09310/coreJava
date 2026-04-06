@@ -1,0 +1,13 @@
+package arrays;
+
+import java.util.Arrays;
+
+public class SelectionSort {
+	
+	public static void main(String[] args) {
+		int nums[] = { 5, 3, 1, 2, 4 };
+		int[] res = selectionSorting(nums);
+		System.out.println(Arrays.toString(res));
+	}
+
+}

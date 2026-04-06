@@ -1,0 +1,15 @@
+package arrays;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+
+		int nums[] = { 5, 3, 1, 2, 4 };
+
+	}
+
+	public static int[] bubbleSorting(int nums[]) {
+		int n = nums.length;
+		return nums;
+	}
+}

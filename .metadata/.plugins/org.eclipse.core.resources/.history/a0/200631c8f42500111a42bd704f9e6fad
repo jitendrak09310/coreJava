@@ -1,0 +1,13 @@
+package arrays;
+
+public class InsertionSort {
+
+	public static void main(String[] args) {
+		int nums[] = { 5, 3, 1, 2, 4 };
+	}
+
+	public static int[] insertionSort(int[] nums) {
+		return nums;
+	}
+
+}

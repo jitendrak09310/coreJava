@@ -1,8 +1,0 @@
-package arraysOperations;
-
-public class ArraysOperations {
-
-	public static void main(String[] args) {
-
-	}
-}

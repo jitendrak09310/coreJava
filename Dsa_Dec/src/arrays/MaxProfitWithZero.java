@@ -1,0 +1,25 @@
+package arrays;
+
+public class MaxProfitWithZero {
+
+	public static void main(String[] args) {
+		int[] prices = { 7, 1, 5, 3, 6, 4 };
+		int maxProfit = calMaxProfit(prices);
+		System.out.println(maxProfit);
+	}
+
+	public static int calMaxProfit(int[] prices) {
+
+		int maxProfit = 0;
+		int cbp = prices[0];
+		for (int i = 0; i < prices.length; i++) {
+			if (cbp <= prices[i]) {
+				int profit = prices[i] - cbp;
+				maxProfit = Math.max(maxProfit, profit);
+			} else {
+				cbp = prices[i];
+			}
+		}
+		return maxProfit;
+	}
+}

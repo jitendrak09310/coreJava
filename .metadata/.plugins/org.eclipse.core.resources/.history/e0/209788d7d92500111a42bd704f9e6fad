@@ -1,0 +1,9 @@
+package arrays;
+
+public class TrappedWaterPractice {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
